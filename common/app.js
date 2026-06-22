@@ -1,23 +1,7 @@
 // app.js
 
-/* dzēsttttttttttt
-const game = {
-  hands: { N: [], E: [], S: [], W: [] },
-  turn: {
-    dealer: "N",
-    current: "N",
-    phase: "start"
-  },
-  bids: [],
-  plays: [],
-  log: []
-};
-*/
-
 function rakstitProtokolu(teksts) {
-  const nr = String(game.log.length + 1).padStart(3, "0");
-  game.log.push(nr + " " + teksts);
-  render();
+  console.log(teksts);
 }
 
 function dzestIzdali() {
