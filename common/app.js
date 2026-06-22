@@ -42,14 +42,13 @@ function generetIzdali() {
 
   deck.sort(() => Math.random() - 0.5);
 
-  fact.hands = {
+  facts.hands = {
     N: deck.slice(0, 13),
     E: deck.slice(13, 26),
     S: deck.slice(26, 39),
     W: deck.slice(39, 52)
   };
 
-  facts.turn.phase = "bidding";
   facts.dealer = "N";
   facts.bids = [];
   facts.plays = [];
