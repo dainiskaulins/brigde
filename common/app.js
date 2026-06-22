@@ -1,3 +1,5 @@
+// app.js
+
 const game = {
   hands: { N: [], E: [], S: [], W: [] },
   turn: {
@@ -34,46 +36,35 @@ function generetIzdali() {
 
   for (let m of mastis) {
     for (let v of vertibas) {
-      deck.push(v + m);
+      deck.push(m + v);  // SVARĪGI: SA, HK, DT, C7
     }
   }
 
   deck.sort(() => Math.random() - 0.5);
 
-  game.hands = {
+  fact.hands = {
     N: deck.slice(0, 13),
     E: deck.slice(13, 26),
     S: deck.slice(26, 39),
     W: deck.slice(39, 52)
   };
 
-  game.turn.phase = "bidding";
-
+  facts.turn.phase = "bidding";
+  facts.dealer = "N";
+  facts.bids = [];
+  facts.plays = [];
+  facts.result = null;
+  
   pogasKrasa("BTN_GENERET_IZDALI", "poga-dzeltena");
   rakstitProtokolu("ĢENERĒT IZDALI");
+  
+  render();
 }
 
 function render() {
   document.getElementById("protokols").textContent =
-    "HANDS\n" +
-    "N: " + game.hands.N.join(" ") + "\n" +
-    "E: " + game.hands.E.join(" ") + "\n" +
-    "S: " + game.hands.S.join(" ") + "\n" +
-    "W: " + game.hands.W.join(" ") + "\n\n" +
-
-    "TURN\n" +
-    "dealer: " + game.turn.dealer + "\n" +
-    "current: " + game.turn.current + "\n" +
-    "phase: " + game.turn.phase + "\n\n" +
-
-    "BIDS\n" +
-    game.bids.join("\n") + "\n\n" +
-
-    "PLAYS\n" +
-    game.plays.join("\n") + "\n\n" +
-
-    "LOG\n" +
-    game.log.join("\n");
+    "FACTS\n" +
+    JSON.stringify(facts, null, 2);
 }
 
 render();
