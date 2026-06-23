@@ -1,3 +1,21 @@
+<!--
+tests1.html
+
+Šis ir testa ekrāns Bridža projektam.
+
+Mērķis:
+- pārbaudīt pogu paneļa darbību;
+- pārbaudīt kopējo JavaScript bibliotēku ielādi;
+- pārbaudīt jaunas izdales ģenerēšanu un dzēšanu.
+
+Šajā failā nav biznesa loģikas.
+Loģika atrodas JavaScript failos direktorijā ../common
+un konkrētā moduļa failā app.js.
+
+Ja pogas tiek veidotas automātiski ar renderButtonPanel(),
+tad HTML pogas šeit nav jādefinē.
+-->
+
 <!doctype html>
 <html>
 <head>
@@ -7,32 +25,11 @@
 </head>
 <body>
 
-<h1>Bridža POGU TESTS 22-JUN-2026 KAUT KAD </h1>
+<h1>Bridža POGU TESTS 22-JUN-2026 </h1>
 
-// visu pogu panelis te būs.
+<!-- Šeit renderButtonPanel() ievietos pogas -->
 <div id="buttonPanel"></div>
-  
-<!-- POGAS -->
-<div id="poguPanelis">
 
-  <button
-    id="BTN_DZEST_IZDALI"
-    class="poga poga-zala"
-    title="Dzēš pašreizējo kāršu izdali"
-    onclick="dzestIzdali()">
-    🗑 Dzēst izdali
-  </button>
-  
- <button
-    id="BTN_GENERET_IZDALI"
-    class="poga poga-zala"
-    title="Ģenerē jaunu 52 kāršu izdali"
-    onclick="generetIzdali()">
-    🎲 Ģenerēt izdali
-  </button>
-  
-</div>
-  
 <pre id="protokols"></pre>
   
 <!-- Kopējās bibliotēkas --> 
@@ -43,8 +40,13 @@
 <script src="../common/buttons.js"></script>
 <script src="../common/render.js"></script>
 <script src="../common/app.js"></script>
-
+  
 <!-- Konkrētā moduļa kods -->
 <script src="app.js"></script>
+  
+<script>
+  renderButtonPanel();
+</script>
+
 </body>
 </html>
