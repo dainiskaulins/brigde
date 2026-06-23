@@ -4,8 +4,8 @@ function rakstitProtokolu(teksts) {
   console.log(teksts);
 }
 
-function dzestIzdali() {
-  console.log("DZEST IZDALI");
+function tuksaIzdale() {
+  console.log("Tukša izdale");
   facts.hands = { N: [], E: [], S: [], W: [] };
   facts.bids = [];
   facts.plays = [];
