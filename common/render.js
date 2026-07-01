@@ -7,6 +7,5 @@ function renderAll() {
   renderTablePanel();
   renderLogPanel();
 }
-}
 
 console.log("common/render.js ielādēts");
