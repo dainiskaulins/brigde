@@ -60,6 +60,7 @@ function renderLogPanel() {
 
 renderTitlePanel();
 renderButtonPanel();
+renderTablePanel();
 renderLogPanel();
 
 console.log("common/app.js ielādēts");
