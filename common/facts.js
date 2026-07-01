@@ -1,4 +1,7 @@
 // facts.js
+// STATUSS:
+// Pārņemts no common_old.
+// 01-JUL-2026 sākta pielāgošana GALDS versijai.
 //
 // ====================================================================
 // BRIDŽA SADALES DATU MODELIS
@@ -40,7 +43,7 @@ const facts = {
     // šis numurs jāpalielina.
     // ------------------------------------------------------------
 
-    version: 1,
+    version: "GALDS 0.0.1",
 
     // ------------------------------------------------------------
     // Sākuma kāršu sadalījums.
