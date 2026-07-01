@@ -1,0 +1,26 @@
+/* common/style.css */
+/* Kopējie stili bridža projektam */
+.poga {
+  border: 2px solid #333;
+  border-radius: 8px;
+  padding: 10px 14px;
+  margin: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.poga-zala { background-color: lightgreen; }
+.poga-dzeltena { background-color: khaki; }
+.poga-sarkana { background-color: lightcoral; }
+.poga-peleka {
+  background-color: lightgray;
+  cursor: not-allowed;
+}
+
+#protokols {
+  margin-top: 15px;
+  padding: 10px;
+  border: 1px solid #999;
+  background: #f5f5f5;
+  white-space: pre-wrap;
+}
