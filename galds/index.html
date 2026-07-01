@@ -1,24 +1,39 @@
+<!--
+=========================================================
+ GALDS
+
+ Jaunā bridža programmas darba versija.
+
+ Uzdevums:
+ - parāda 4 paneļus: virsrakstu, pogas, galdu, protokolu;
+ - ielādē jauno common kodu;
+ - nesatur pašu spēles loģiku HTML failā.
+
+ 2026-07-01
+=========================================================
+-->
+
 <!doctype html>
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Bridža ???????????????????</title>
+  <title>GALDS</title>
+  <link rel="stylesheet" href="../common/style.css">
 </head>
+
 <body>
 
-<h1>Bridža ?????????? 01-JUL-2026 </h1>
+<div id="titlePanel"></div>
+<div id="buttonPanel"></div>
+<div id="tablePanel"></div>
+<div id="logPanel"></div>
 
-<button onclick="location.href='galds/'">GALDS</button>
-<button onclick="location.href='tests1/'">TESTS pogas 1</button>
-
- 
-<p id="x">Nekas nav nospiests.</p>
-
-<script>
-function atbilde(teksts) {
-  document.getElementById('x').innerHTML = 'Nospiests: ' + teksts;
-}
-</script>
+<script src="../common/facts.js"></script>
+<script src="../common/cards.js"></script>
+<script src="../common/utils.js"></script>
+<script src="../common/buttonPanel.js"></script>
+<script src="../common/render.js"></script>
+<script src="../common/app.js"></script>
 
 </body>
 </html>
