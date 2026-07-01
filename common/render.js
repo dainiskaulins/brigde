@@ -30,10 +30,12 @@ function render() {
     "FACTS\n" +
     JSON.stringify(facts, null, 2);
 } 
+
 function renderTablePanel() {
   const panelis = document.getElementById("tablePanel");
   if (!panelis) return;
 
   panelis.innerHTML = "<h3>Šeit būs bridža galds</h3>";
 }
+
 console.log("common/render.js ielādēts");
