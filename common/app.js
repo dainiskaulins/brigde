@@ -14,7 +14,7 @@ function tuksaIzdale() {
   pogasKrasa("BTN_TUKSA_IZDALE", "poga-dzeltena");
   rakstitProtokolu("Tukša izdale");
 
-  render();
+  renderLogPanel();
 }
 
 function generetIzdali() {
@@ -47,7 +47,7 @@ function generetIzdali() {
   pogasKrasa("BTN_GENERET_IZDALI", "poga-dzeltena");
   rakstitProtokolu("ĢENERĒT IZDALI");
   
-  render();
+  renderLogPanel();
 }
 
 function renderLogPanel() {
@@ -56,6 +56,6 @@ function renderLogPanel() {
     JSON.stringify(facts, null, 2);
 }
 
-render();
+renderLogPanel();
 
 console.log("common/app.js ielādēts");
