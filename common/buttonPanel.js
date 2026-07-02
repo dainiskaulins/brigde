@@ -55,7 +55,6 @@ for (const poga of BUTTONS_TITLE) {
     rinda.appendChild(btn);
 }
   panelis.appendChild(rinda);
-  }
 }
 
 console.log("common/buttonPanel.js ielādēts");
