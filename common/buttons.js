@@ -7,4 +7,4 @@ function pogasKrasa(id, klase) {
   poga.classList.add(klase);
 }
 
-console.log("buttons.js ielādēts");
+console.log("common/buttons.js ielādēts");
