@@ -88,7 +88,8 @@ function renderButtonPanel(buttonSet) {
 
   const statuss = document.createElement("div");
   statuss.id = "buttonStatus";
-  statuss.textContent = "Statuss: izvēlies darbību";
+  statuss.className = "button-status";
+  statuss.textContent = "Solu: -";
   panelis.appendChild(statuss);
 
   const rinda = document.createElement("div");
