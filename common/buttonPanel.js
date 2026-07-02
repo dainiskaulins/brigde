@@ -80,7 +80,7 @@ function izsauktPogasFunkciju(poga) {
   }
 }
 
-function renderButtonPanel() {
+function renderButtonPanel(buttonSet) {
   const panelis = document.getElementById("buttonPanel");
   if (!panelis) return;
 
@@ -94,7 +94,7 @@ function renderButtonPanel() {
   const rinda = document.createElement("div");
   rinda.className = "pogu-rinda";
 
-  for (const poga of BUTTONS_TITLE.pogas) {
+  for (const poga of buttonSet.pogas) {
     const btn = document.createElement("button");
 
     btn.id = poga.id;
