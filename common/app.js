@@ -53,7 +53,7 @@ function renderLogPanel() {
 
 function renderAll() {
     renderTitlePanel();
-    renderButtonPanel(BUTTONS_TITLE);
+    renderButtonPanel();
     renderTablePanel();
     renderLogPanel();
 }
