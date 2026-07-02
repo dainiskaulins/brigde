@@ -11,15 +11,12 @@ Uzdevums:
 =========================================================
 */
 
-const POGU_GRUPAS = [
-  {
-    nosaukums: "IZDALE",
-    pogas: [
-      { id: "BTN_GENERET_IZDALI", teksts: "🎲 Jauna spēle", funkcija: "jaunaSpele", klase: "poga-zala" },
-      { id: "BTN_TUKSA_IZDALE", teksts: "Tukša izdale", funkcija: "tuksaIzdale", klase: "poga-zala" }
-    ]
-  }
+
+const BUTTONS_TITLE = [
+  { id: "BTN_JAUNA_SPELE", teksts: "Jauna spēle", funkcija: "jaunaSpele", klase: "poga-zala" }
+  { id: "BTN_TUKSA_IZDALE", teksts: "Tukša izdale", funkcija: "tuksaIzdale", klase: "poga-zala" }
 ];
+
 
 function izsauktPogasFunkciju(poga) {
   const fn = window[poga.funkcija];
