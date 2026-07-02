@@ -38,28 +38,23 @@ function renderButtonPanel() {
 
   panelis.innerHTML = "";
 
-  for (const grupa of POGU_GRUPAS) {
-    const rinda = document.createElement("div");
+/* --- */
+  const rinda = document.createElement("div");
 
-    const virsraksts = document.createElement("strong");
-    virsraksts.textContent = grupa.nosaukums + ": ";
-    rinda.appendChild(virsraksts);
+for (const poga of BUTTONS_TITLE) {
+    const btn = document.createElement("button");
 
-    for (const poga of grupa.pogas) {
-      const btn = document.createElement("button");
+    btn.id = poga.id;
+    btn.className = "poga " + poga.klase;
+    btn.textContent = poga.teksts;
 
-      btn.id = poga.id;
-      btn.className = "poga " + poga.klase;
-      btn.textContent = poga.teksts;
-
-      btn.addEventListener("click", function () {
+    btn.addEventListener("click", function () {
         izsauktPogasFunkciju(poga);
-      });
+    });
 
-      rinda.appendChild(btn);
-    }
-
-    panelis.appendChild(rinda);
+    rinda.appendChild(btn);
+}
+  panelis.appendChild(rinda);
   }
 }
 
