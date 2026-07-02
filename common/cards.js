@@ -10,12 +10,12 @@ Uzdevums:
 */
 
 function formatHand(hand) {
-  const suits = [
-    { code: "S", symbol: "♠" },
-    { code: "H", symbol: "♥" },
-    { code: "D", symbol: "♦" },
-    { code: "C", symbol: "♣" }
-  ];
+const suits = [
+  { code: "S", symbol: '<span class="suit-black">♠</span>' },
+  { code: "H", symbol: '<span class="suit-red">♥</span>' },
+  { code: "D", symbol: '<span class="suit-red">♦</span>' },
+  { code: "C", symbol: '<span class="suit-black">♣</span>' }
+];
 
   let lines = [];
 
