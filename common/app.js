@@ -1,4 +1,4 @@
-// app.js
+// common/app.js
 
 function rakstitProtokolu(teksts) {
   console.log(teksts);
@@ -12,10 +12,7 @@ function tuksaIzdale() {
   facts.result = null;
 
   rakstitProtokolu("Tukša izdale");
-
-  renderButtonPanel();
-  renderTablePanel();
-  renderLogPanel();
+  renderAll();
 }
 
 function generetIzdali() {
@@ -46,10 +43,6 @@ function generetIzdali() {
   facts.result = null;
   
   rakstitProtokolu("ĢENERĒT IZDALI");
-
-  renderButtonPanel();
-  renderTablePanel();
-  renderLogPanel();
 }
 
 function renderLogPanel() {
@@ -58,13 +51,19 @@ function renderLogPanel() {
     JSON.stringify(facts, null, 2);
 }
 
-function jaunaSpele() {
-    generetIzdali();
+function renderAll() {
+    renderTitlePanel();
+    renderButtonPanel();
+    renderTablePanel();
+    renderLogPanel();
 }
 
-renderTitlePanel();
-renderButtonPanel();
-renderTablePanel();
-renderLogPanel();
+function jaunaSpele() {
+    generetIzdali();
+    renderAll();
+}
+
+// gribam uzreiz jaunu spēli
+jaunaSpele();
 
 console.log("common/app.js ielādēts");
