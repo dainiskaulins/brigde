@@ -16,7 +16,9 @@
 //  renderLogPanel();
 //}
   
-function renderTitlePanel() {
+function renderTitlePanel(buttons) {
+  buttons.nosaukums
+  buttons.pogas
   const panelis = document.getElementById("titlePanel");
   if (!panelis) return;
 
