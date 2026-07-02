@@ -31,6 +31,7 @@ function render() {
     JSON.stringify(facts, null, 2);
 } 
 
+/* -----
 function renderTablePanel() {
   const panelis = document.getElementById("tablePanel");
   if (!panelis) return;
@@ -51,5 +52,46 @@ function renderTablePanel() {
     </div>
   `;
 }
+-----   */
+function renderNorthPanel() {
+  return `<div class="seat">N</div>`;
+}
+
+function renderWestPanel() {
+  return `<div class="seat">W</div>`;
+}
+
+function renderCenterPanel() {
+  return `<div class="trick">stiķis</div>`;
+}
+
+function renderEastPanel() {
+  return `<div class="seat">E</div>`;
+}
+
+function renderSouthPanel() {
+  return `<div class="seat">S</div>`;
+}
+
+function renderTablePanel() {
+  const panelis = document.getElementById("tablePanel");
+  if (!panelis) return;
+
+  panelis.innerHTML = `
+    <div class="bridge-table">
+      <div></div>
+      ${renderNorthPanel()}
+      <div></div>
+
+      ${renderWestPanel()}
+      ${renderCenterPanel()}
+      ${renderEastPanel()}
+
+      <div></div>
+      ${renderSouthPanel()}
+      <div></div>
+    </div>
+  `;
+  }
 
 console.log("common/render.js ielādēts");
