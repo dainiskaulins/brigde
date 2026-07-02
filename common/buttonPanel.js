@@ -11,12 +11,13 @@ Uzdevums:
 =========================================================
 */
 
-
-const BUTTONS_TITLE = [
-  { id: "BTN_JAUNA_SPELE", teksts: "Jauna spēle", funkcija: "jaunaSpele", klase: "poga-zala" },
-  { id: "BTN_TUKSA_IZDALE", teksts: "Tukša izdale", funkcija: "tuksaIzdale", klase: "poga-zala" }
-];
-
+const BUTTONS_TITLE = {
+  nosaukums: "TITLE",
+  pogas: [
+    { id: "BTN_JAUNA_SPELE", teksts: "Jauna spēle", funkcija: "jaunaSpele", klase: "poga-zala" },
+    { id: "BTN_TUKSA_IZDALE", teksts: "Tukša izdale", funkcija: "tuksaIzdale", klase: "poga-zala" }
+  ]
+};
 
 function izsauktPogasFunkciju(poga) {
   const fn = window[poga.funkcija];
