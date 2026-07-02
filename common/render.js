@@ -36,6 +36,31 @@ function render() {
     JSON.stringify(facts, null, 2);
 } 
 
+function renderButtonPanel() {
+  const panelis = document.getElementById("buttonPanel");
+  if (!panelis) return;
+
+  panelis.innerHTML = "";
+
+  const statuss = document.createElement("div");
+  statuss.id = "buttonStatus";
+  statuss.textContent = "Statuss: izvēlies darbību";
+  panelis.appendChild(statuss);
+
+  for (const poga of BUTTONS_TITLE) {
+    const btn = document.createElement("button");
+    btn.id = poga.id;
+    btn.className = "poga " + poga.klase;
+    btn.textContent = poga.teksts;
+
+    btn.addEventListener("click", function () {
+      izsauktPogasFunkciju(poga);
+    });
+
+    panelis.appendChild(btn);
+  }
+}
+
 /* -----
 function renderTablePanel() {
   const panelis = document.getElementById("tablePanel");
