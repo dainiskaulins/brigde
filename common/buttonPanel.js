@@ -1,12 +1,7 @@
 /* common/buttonPanel.js
 =========================================================
 GALDS pogu panelis.
-
-Uzdevums:
-- uzzīmē tikai tās pogas, kas šajā etapā vajadzīgas;
-- sākumā: "Ģenerēt" un "Tukša izdale";
-- vēlāk šeit parādīsies solīšanas/izspēles pogas pēc vajadzības.
-
+Pagaidu stabilā versija: TITLE pogas.
 2026-07-01
 =========================================================
 */
@@ -31,32 +26,32 @@ function izsauktPogasFunkciju(poga) {
 
 function renderButtonPanel() {
   const panelis = document.getElementById("buttonPanel");
-
-  if (!panelis) {
-    console.log("Nav atrasts buttonPanel");
-    return;
-  }
+  if (!panelis) return;
 
   panelis.innerHTML = "";
 
-/* --- */
+  const statuss = document.createElement("div");
+  statuss.id = "buttonStatus";
+  statuss.textContent = "Statuss: izvēlies darbību";
+  panelis.appendChild(statuss);
+
   const rinda = document.createElement("div");
+  rinda.className = "pogu-rinda";
 
-for (const poga of BUTTONS_TITLE.pogas) {
+  for (const poga of BUTTONS_TITLE.pogas) {
     const btn = document.createElement("button");
-
     btn.id = poga.id;
     btn.className = "poga " + poga.klase;
     btn.textContent = poga.teksts;
 
     btn.addEventListener("click", function () {
-        izsauktPogasFunkciju(poga);
+      izsauktPogasFunkciju(poga);
     });
 
     rinda.appendChild(btn);
-}
+  }
+
   panelis.appendChild(rinda);
 }
 
 console.log("common/buttonPanel.js ielādēts");
-
