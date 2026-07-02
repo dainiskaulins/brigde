@@ -38,8 +38,8 @@ function render() {
     JSON.stringify(facts, null, 2);
 } 
 
-/* -----
-function renderButtonPanel() {
+// -----
+function renderButtonPanel(buttonSet) {
   const panelis = document.getElementById("buttonPanel");
   if (!panelis) return;
 
@@ -50,7 +50,7 @@ function renderButtonPanel() {
   statuss.textContent = "Statuss: izvēlies darbību";
   panelis.appendChild(statuss);
 
-  for (const poga of BUTTONS_TITLE) {
+  for (const poga of buttonSet.pogas) {
     const btn = document.createElement("button");
     btn.id = poga.id;
     btn.className = "poga " + poga.klase;
