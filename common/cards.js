@@ -5,6 +5,15 @@ Kāršu attēlošana.
 Uzdevums:
 - pārvērš kāršu masīvu skaistā tekstā pa mastīm.
 
+Kāršu attēlošana:
+♠ ♥ ♦ ♣
+
+Solīšanas secība:
+♣ ♦ ♥ ♠ NT
+
+Šie standarti netiek mainīti.
+*/
+
 2026-07-01
 =========================================================
 */
