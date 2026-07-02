@@ -99,3 +99,12 @@ body {
   padding: 20px;
   font-size: 18px;
 }
+
+/* kāršu krāsas */
+.suit-red {
+  color: red;
+}
+
+.suit-black {
+  color: black;
+}
