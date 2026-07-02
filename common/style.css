@@ -108,3 +108,9 @@ body {
 .suit-black {
   color: black;
 }
+
+.button-status {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
