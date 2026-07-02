@@ -11,7 +11,6 @@ function tuksaIzdale() {
   facts.plays = [];
   facts.result = null;
 
-  pogasKrasa("BTN_TUKSA_IZDALE", "poga-dzeltena");
   rakstitProtokolu("Tukša izdale");
 
   renderButtonPanel();
@@ -46,7 +45,6 @@ function generetIzdali() {
   facts.plays = [];
   facts.result = null;
   
-  pogasKrasa("BTN_GENERET_IZDALI", "poga-dzeltena");
   rakstitProtokolu("ĢENERĒT IZDALI");
 
   renderButtonPanel();
