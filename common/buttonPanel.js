@@ -1,8 +1,7 @@
 /* common/buttonPanel.js
 =========================================================
-GALDS pogu panelis.
-Pagaidu stabilā versija: TITLE pogas.
-2026-07-01
+Stabila pagaidu versija.
+Rāda tikai divas pogas: Jauna spēle, Tukša izdale.
 =========================================================
 */
 
@@ -40,6 +39,7 @@ function renderButtonPanel() {
 
   for (const poga of BUTTONS_TITLE.pogas) {
     const btn = document.createElement("button");
+
     btn.id = poga.id;
     btn.className = "poga " + poga.klase;
     btn.textContent = poga.teksts;
