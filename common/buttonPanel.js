@@ -39,7 +39,37 @@ const BUTTONS_TITLE = {
 
   ]
 };
- 
+
+const BUTTONS_BIDDING = {
+  nosaukums: "SOLĪŠANA",
+
+  pogas: [
+
+    { id:"BTN_1", teksts:"1", funkcija:"", klase:"poga-zala" },
+    { id:"BTN_2", teksts:"2", funkcija:"", klase:"poga-zala" },
+    { id:"BTN_3", teksts:"3", funkcija:"", klase:"poga-zala" },
+    { id:"BTN_4", teksts:"4", funkcija:"", klase:"poga-zala" },
+    { id:"BTN_5", teksts:"5", funkcija:"", klase:"poga-zala" },
+    { id:"BTN_6", teksts:"6", funkcija:"", klase:"poga-zala" },
+    { id:"BTN_7", teksts:"7", funkcija:"", klase:"poga-zala" },
+
+    { id:"BTN_C", teksts:"♣", funkcija:"", klase:"poga-zala" },
+    { id:"BTN_D", teksts:"♦", funkcija:"", klase:"poga-zala" },
+    { id:"BTN_H", teksts:"♥", funkcija:"", klase:"poga-zala" },
+    { id:"BTN_S", teksts:"♠", funkcija:"", klase:"poga-zala" },
+    { id:"BTN_NT", teksts:"NT", funkcija:"", klase:"poga-zala" },
+
+    { id:"BTN_PASS", teksts:"PASS", funkcija:"", klase:"poga-zala" },
+    { id:"BTN_X", teksts:"X", funkcija:"", klase:"poga-zala" },
+    { id:"BTN_XX", teksts:"XX", funkcija:"", klase:"poga-zala" },
+
+    { id:"BTN_SOLIT", teksts:"SOLĪT", funkcija:"", klase:"poga-zala" },
+
+    { id:"BTN_EXIT", teksts:"JAUNA SPĒLE", funkcija:"jaunaSpele", klase:"poga-dzeltena" }
+
+  ]
+};
+
 function izsauktPogasFunkciju(poga) {
   const fn = window[poga.funkcija];
 
