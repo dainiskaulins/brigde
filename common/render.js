@@ -36,6 +36,7 @@ function render() {
     JSON.stringify(facts, null, 2);
 } 
 
+/* -----
 function renderButtonPanel() {
   const panelis = document.getElementById("buttonPanel");
   if (!panelis) return;
