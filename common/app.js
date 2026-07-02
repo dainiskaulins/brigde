@@ -58,6 +58,10 @@ function renderLogPanel() {
     JSON.stringify(facts, null, 2);
 }
 
+function jaunaSpele() {
+    generetIzdali();
+}
+
 renderTitlePanel();
 renderButtonPanel();
 renderTablePanel();
