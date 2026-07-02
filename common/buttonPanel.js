@@ -42,7 +42,7 @@ function renderButtonPanel() {
 /* --- */
   const rinda = document.createElement("div");
 
-for (const poga of BUTTONS_TITLE) {
+for (const poga of BUTTONS_TITLE.pogas) {
     const btn = document.createElement("button");
 
     btn.id = poga.id;
