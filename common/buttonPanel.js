@@ -15,7 +15,7 @@ const POGU_GRUPAS = [
   {
     nosaukums: "IZDALE",
     pogas: [
-      { id: "BTN_GENERET_IZDALI", teksts: "🎲 Ģenerēt", funkcija: "generetIzdali", klase: "poga-zala" },
+      { id: "BTN_GENERET_IZDALI", teksts: "🎲 Jauna spēle", funkcija: "jaunaSpele", klase: "poga-zala" },
       { id: "BTN_TUKSA_IZDALE", teksts: "Tukša izdale", funkcija: "tuksaIzdale", klase: "poga-zala" }
     ]
   }
