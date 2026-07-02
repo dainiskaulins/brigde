@@ -54,11 +54,11 @@ function renderTablePanel() {
 }
 -----   */
 function renderNorthPanel() {
-  return `<div class="seat">N<br>${facts.hands.N.join(" ")}</div>`;
+  return `<div class="seat">N<br>${formatHand(facts.hands.N)}</div>`;
 }
 
 function renderWestPanel() {
-  return `<div class="seat">W<br>${facts.hands.W.join(" ")}</div>`;
+  return `<div class="seat">W<br>${formatHand(facts.hands.W)}</div>`;
 }
 
 function renderCenterPanel() {
@@ -66,11 +66,11 @@ function renderCenterPanel() {
 }
 
 function renderEastPanel() {
-  return `<div class="seat">E<br>${facts.hands.E.join(" ")}</div>`;
+  return `<div class="seat">E<br>${formatHand(facts.hands.E)}</div>`;
 }
 
 function renderSouthPanel() {
-  return `<div class="seat">S<br>${facts.hands.S.join(" ")}</div>`;
+  return `<div class="seat">S<br>${formatHand(facts.hands.S)}</div>`;
 }
 
 function renderTablePanel() {
