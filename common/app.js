@@ -15,6 +15,7 @@ function tuksaIzdale() {
   rakstitProtokolu("Tukša izdale");
 
   renderButtonPanel();
+  renderTablePanel();
   renderLogPanel();
 }
 
@@ -49,6 +50,7 @@ function generetIzdali() {
   rakstitProtokolu("ĢENERĒT IZDALI");
 
   renderButtonPanel();
+  renderTablePanel();
   renderLogPanel();
 }
 
