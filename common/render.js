@@ -16,7 +16,7 @@
 //  renderLogPanel();
 //}
   
-function renderTitlePanel(buttons) {
+function renderTitlePanel() {
   const panelis = document.getElementById("titlePanel");
   if (!panelis) return;
 
