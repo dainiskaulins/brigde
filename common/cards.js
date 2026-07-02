@@ -11,10 +11,7 @@ Kāršu attēlošana:
 Solīšanas secība:
 ♣ ♦ ♥ ♠ NT
 
-Šie standarti netiek mainīti.
-*/
-
-2026-07-01
+Šie standarti netiek mainīti.   2026-07-01
 =========================================================
 */
 
