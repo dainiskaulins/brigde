@@ -54,23 +54,23 @@ function renderTablePanel() {
 }
 -----   */
 function renderNorthPanel() {
-  return `<div class="seat">N</div>`;
+  return `<div class="seat">N<br>${facts.hands.N.join(" ")}</div>`;
 }
 
 function renderWestPanel() {
-  return `<div class="seat">W</div>`;
+  return `<div class="seat">W<br>${facts.hands.W.join(" ")}</div>`;
 }
 
 function renderCenterPanel() {
-  return `<div class="trick">stiķis</div>`;
+  return `<div class="trick">viens stiķis</div>`;
 }
 
 function renderEastPanel() {
-  return `<div class="seat">E</div>`;
+  return `<div class="seat">E<br>${facts.hands.E.join(" ")}</div>`;
 }
 
 function renderSouthPanel() {
-  return `<div class="seat">S</div>`;
+  return `<div class="seat">S<br>${facts.hands.S.join(" ")}</div>`;
 }
 
 function renderTablePanel() {
