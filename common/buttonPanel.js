@@ -6,13 +6,40 @@ Rāda tikai divas pogas: Jauna spēle, Tukša izdale.
 */
 
 const BUTTONS_TITLE = {
-  nosaukums: "TITLE",
-  pogas: [
-    { id: "BTN_JAUNA_SPELE", teksts: "Jauna spēle", funkcija: "jaunaSpele", klase: "poga-zala" },
-    { id: "BTN_TUKSA_IZDALE", teksts: "Tukša izdale", funkcija: "tuksaIzdale", klase: "poga-zala" }
+  nosaukums: "JAUNA SPĒLE",
+   pogas: [
+
+    {
+      id: "BTN_JAUNA_SPELE",
+      teksts: "Jauna spēle",
+      funkcija: "jaunaSpele",
+      klase: "poga-zala"
+    },
+
+    {
+      id: "BTN_TUKSA_IZDALE",
+      teksts: "Tukša izdale",
+      funkcija: "tuksaIzdale",
+      klase: "poga-zala"
+    },
+
+    {
+      id: "BTN_LABOT_IZDALI",
+      teksts: "Labot izdali",
+      funkcija: "labotIzdali",
+      klase: "poga-peleka"
+    },
+
+    {
+      id: "BTN_CHECK_IZDALE",
+      teksts: "Pārbaude",
+      funkcija: "parbauditIzdali",
+      klase: "poga-peleka"
+    }
+
   ]
 };
-
+ 
 function izsauktPogasFunkciju(poga) {
   const fn = window[poga.funkcija];
 
